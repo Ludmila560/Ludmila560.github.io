@@ -390,7 +390,7 @@ body._touch .menu_arrow{
 		overflow: auto;
 	}
 	.menu_list{
-		min-height: 500px;
+		min-height: 800px;
 		overflow: auto;
 	}
 	.menu_list li{
