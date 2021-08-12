@@ -93,6 +93,9 @@ form{
 	width: 80%;
 	margin: auto;
 }
+.my_btn_main{
+	margin-bottom: 50px;	
+}
 @media (max-width: 991px){
 	.counter li{
 		width: 200px;
