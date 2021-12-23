@@ -1,124 +1,521 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link  href="fancybox/jquery.fancybox.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-	<link rel="stylesheet" href="style.css">
-	<script src="fancybox/jquery.fancybox.min.js"></script>
-	<title>Вентиляция</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Activitar Template">
+    <meta name="keywords" content="Activitar, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Музыкальная-Школа Интрада</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
-		<!-- Modal -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <form>
-		      	<div class="form_line"></div>
-		      	<div class="form_heading">Заказать услугу</div>
-				  <div class="mb-3">
-				    <input type="text" class="form-control" id="exampleInputName" placeholder="Ваше имя">
-				  </div>
-				  <div class="mb-3">
-				    <input type="tel" class="form-control" id="exampleInputTel" placeholder="+7(...)___-__-__" >
-				  </div>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
 
-				  <button type="submit" class="btn btn-primary btn_form">Отправить заявку
-				  	<i class="bi bi-arrow-right-circle"></i>
-				  </button>
-				</form>
-		    </div>
-		  </div>
-		</div>
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="img/logo2.png" alt="">
+                </a>
+            </div>
+            <div class="top-social">
+                <a href="#"><i class="fa fa-vk"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="container container-nav-menu">
+                <div class="nav-menu">
+                    <nav class="mainmenu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Главная</a></li>
+                            <li><a href=".feature-section">Направления</a></li>
+                            <li><a href=".chooseus-section">Наши преимущества</a></li>
+                            <li><a href=".trainer-section">Наши педагоги</a></li>
+                            <li><a href=".breadcrumb-section">Галерея</a></li>
+                            <li><a href=".map">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
 
-	<div class="bg_img">
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-light ">
-			  <div class="container-fluid">
-			    <a class="navbar-brand" href="#"><img src="logo.png" alt="logo"></a>
-			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			      <span class="navbar-toggler-icon"></span>
-			    </button>
-			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-			        <li class="nav-item">
-			          <a class="nav-link active" aria-current="page" href="#">О компании</a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link" href="#">Услуги</a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link" href="#">Контакты</a>
-			        </li>
-			      </ul>
-			      <div class="d-flex">
-			        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-			        <li class="nav-item phone_container">
-			        	<a class="nav-link phone_text" aria-current="page" href="#">Звонок бесплатный</a>
-			        	<a class="phone" aria-current="page" href="#">+7(456) 567-78-78</a>
-			        	
-			        </li>
-			        <li class="nav-item my_btn">
-			          <button class="btn btn-primary" type="submit" >Заказать услуги</button>
-			        </li>
-			      </ul>
-			        
-			      </div>
-			    </div>
-			  </div>
-			</nav>
-			<div class="main_text">
-				<div>Серьёзные решения</div>
-				<h1>по кондинцианированию <br> и вентиляции</h1>
-			</div>
+    <!-- Hero Section Begin -->
+    <section class="hero-section">
+        <div class="hero-items owl-carousel">
+            <div class="single-hero-item set-bg" data-setbg="img/hero-slider/hero-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hero-text">
+                                <h1>Музыкальная-Школа Интрада</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-hero-item set-bg" data-setbg="img/hero-slider/hero-2.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hero-text">
+                                <h1>Музыкальная-Школа Интрада</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-hero-item set-bg" data-setbg="img/hero-slider/hero-3.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hero-text">
+                                <h1>Музыкальная-Школа Интрада</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
 
-			<div class="counter">
-				<ul>
-					<li>
-						<div class="number">
-							1638
-						</div>
-						<div class="counter_text">
-							Довольных<br>клиентов
-						</div>
-					</li>
-					<li>
-						<div class="number">
-							1638
-						</div>
-						<div class="counter_text">
-							Довольных<br>клиентов
-						</div>
-					</li>
-					<li>
-						<div class="number">
-							1638
-						</div>
-						<div class="counter_text">
-							Довольных<br>клиентов
-						</div>
-					</li>
-				</ul>
-			</div>
-			<button class="btn btn-primary my_btn_main" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
-				Заказать услугу
-				<i class="bi bi-arrow-right-circle"></i>
-			</button>
-		</div>
+    <!-- Feature Section Begin -->
+    <section class="feature-section">
+        <div class="price-section spad set-bg" data-setbg="img/price-bg.jpg">
+            <div class="row classes">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Что будет на пробном занятии?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="feature-item set-bg" data-setbg="img/feature/feature-1.jpg">
+                        <h3>Гитара</h3>
+                        <p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                        <a href="guitar.html" class="primary-btn f-btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-item set-bg" data-setbg="img/feature/feature-4.jpg">
+                        <h3>Ударные</h3>
+                        <p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                        <a href="drums.html" class="primary-btn f-btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-item set-bg" data-setbg="img/feature/feature-2.jpg">
+                        <h3>Фортепиано</h3>
+                        <p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                        <a href="piano.html" class="primary-btn f-btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-item set-bg" data-setbg="img/feature/feature-3.jpg">
+                        <h3>Вокал</h3>
+                        <p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                       <a href="vocals.html" class="primary-btn f-btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Choseus Section Begin -->
+    <section class="chooseus-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Наши преимущества</h2>
+                        <p>Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="choose-item">
+                        <img src="img/icons/chose-icon-1.png" alt="">
+                        <h5>Поддержка 24/24</h5>
+                        <p>Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="choose-item">
+                        <img src="img/icons/chose-icon-2.png" alt="">
+                        <h5>Наши тренеры</h5>
+                        <p>Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="choose-item">
+                        <img src="img/icons/chose-icon-3.png" alt="">
+                        <h5>Индивидуальный подход к каждому</h5>
+                        <p>Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="choose-item">
+                        <img src="img/icons/chose-icon-4.png" alt="">
+                        <h5>Наше оборудование</h5>
+                        <p>Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="choose-item">
+                        <img src="img/icons/chose-icon-5.png" alt="">
+                        <h5>Занятия ежедневно</h5>
+                        <p>Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="choose-item">
+                        <img src="img/icons/chose-icon-6.png" alt="">
+                        <h5>Каждый месяц отчетный урок</h5>
+                        <p>Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Choseus Section End -->
 
-	</div>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	<script>
-		var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
+    <!-- Trainer Section Begin -->
+    <section class="trainer-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Наши педагоги</h2>
+                        <p>Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="trainer-item">
+                        <div class="ti-pic">
+                            <img src="img/trainer/trainer-1.jpg" alt="">
+                            <div class="ti-links">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                            <div class="trainer-text">
+                                <h5>ФИО <span>- Должность</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="trainer-item">
+                        <div class="ti-pic">
+                            <img src="img/trainer/trainer-1.jpg" alt="">
+                            <div class="ti-links">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                            <div class="trainer-text">
+                                <h5>ФИО <span>- Должность</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="trainer-item">
+                        <div class="ti-pic">
+                            <img src="img/trainer/trainer-1.jpg" alt="">
+                            <div class="ti-links">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                            <div class="trainer-text">
+                                <h5>ФИО <span>- Должность</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="trainer-item">
+                        <div class="ti-pic">
+                            <img src="img/trainer/trainer-1.jpg" alt="">
+                            <div class="ti-links">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                            <div class="trainer-text">
+                                <h5>ФИО <span>- Должность</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trainer Section End -->
 
-myModal.addEventListener('shown.bs.modal', function () {
-  myInput.focus()
-})
-	
-	</script>
+     <!-- Video Section Begin -->
+    <section class="video-section set-bg" data-setbg="img/video-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="video-text">
+                        <h2>Здесь видео</h2>
+                        
+                            <i class="fa fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video Section End -->
+
+    <!-- Gallery Section Begin -->
+    <section class="breadcrumb-section padding-my set-bg spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <h2>Наша галерея</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-section spad">
+        <div class="container">
+            
+            <div class="row gallery-filter">
+                <div class="col-lg-4 col-sm-6 mix crossfit workout">
+                    <div class="gallery-item">
+                        <img src="img/gallery/gallery-1.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/gallery/gallery-1.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
+                                <h6>День города 2019</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix workout gym">
+                    <div class="gallery-item">
+                        <img src="img/gallery/gallery-2.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/gallery/gallery-2.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
+                                <h6>День города 2019</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix workout">
+                    <div class="gallery-item">
+                        <img src="img/gallery/gallery-3.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/gallery/gallery-3.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
+                                <h6>День города 2019</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix gym">
+                    <div class="gallery-item">
+                        <img src="img/gallery/gallery-4.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/gallery/gallery-4.jpg" class="image-popup"><i
+                                        class="fa fa-search-plus"></i></a>
+                                <h6>Отчетный концерт 2019</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix crossfit">
+                    <div class="gallery-item">
+                        <img src="img/gallery/gallery-5.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/gallery/gallery-5.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
+                                <h6>Отчетный концерт 2019</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix gym crossfit">
+                    <div class="gallery-item">
+                        <img src="img/gallery/gallery-6.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/gallery/gallery-6.jpg" class="image-popup"><i
+                                        class="fa fa-search-plus"></i></a>
+                                <h6>Отчетный концерт 2019</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix workout">
+                    <div class="gallery-item">
+                        <img src="img/gallery/gallery-7.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/gallery/gallery-7.jpg" class="image-popup"><i
+                                        class="fa fa-search-plus"></i></a>
+                                <h6>Отчетный концерт 2019</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix crossfit gym">
+                    <div class="gallery-item">
+                        <img src="img/gallery/gallery-8.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/gallery/gallery-8.jpg" class="image-popup"><i
+                                        class="fa fa-search-plus"></i></a>
+                                <h6>Отчетный концерт 2019</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix crossfit gym workout">
+                    <div class="gallery-item">
+                        <img src="img/gallery/gallery-9.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/gallery/gallery-9.jpg" class="image-popup"><i
+                                        class="fa fa-search-plus"></i></a>
+                                <h6>Отчетный концерт 2019</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section End -->
+
+    <!-- Map Section Begin -->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.6957296370833!2d47.17814845847061!3d56.14507461713227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415a383e55555555%3A0x3e1e9df1f95c6c7b!2z0JzRg9C30YvQutCw0LvRjNC90LDRjyDRiNC60L7Qu9CwICLQmNC90YLRgNCw0LTQsCI!5e0!3m2!1sru!2sru!4v1640176931170!5m2!1sru!2sru" height="590" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="map-contact-detalis">
+            <div class="open-time">
+                <h5>График работы</h5>
+                <ul>
+                    <li>ПН-ПТ: <span>10:00 - 21:00</span></li>
+                    <li>Суббота: <span>10:00 - 21:00</span></li>
+                    <li>Воскресенье: <span>10:00 - 21:00</span></li>
+                </ul>
+            </div>
+            <!-- <div class="map-contact-form">
+                <h5>Форма обратной связи</h5>
+                <form action="#">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" class="phone" placeholder="Телефон">
+                    <textarea placeholder="Сообщение"></textarea>
+                    <button type="submit" class="site-btn">Отправить</button>
+                </form>
+            </div> -->
+        </div>
+    </div>
+    <!-- Map Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-logo-item">
+                        <div class="f-logo">
+                            <a href="#"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Грустный над, это послушавшись </p>
+                        <div class="social-links">
+                            <h6>Социальные сети</h6>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5"></div>
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h5>Мои Контакты</h5>
+                        <ul class="footer-info">
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <span>Телефон:</span>
+                                89029644158
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope-o"></i>
+                                <span>Email:</span>
+                                savenkoluda28@gmail.com
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                <span>Адрес</span>
+                                г. Красноярск
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="ct-inside"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+<!-- Copyright --> &copy;<script>document.write(new Date().getFullYear());</script><!--  All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
