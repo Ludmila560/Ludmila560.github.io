@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'icomoon-qc';
+  src:  url('fonts/icomoon-qc.eot?9vl83p');
+  src:  url('fonts/icomoon-qc.eot?9vl83p#iefix') format('embedded-opentype'),
+    url('fonts/icomoon-qc.ttf?9vl83p') format('truetype'),
+    url('fonts/icomoon-qc.woff?9vl83p') format('woff'),
+    url('fonts/icomoon-qc.svg?9vl83p#icomoon-qc') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="qc-icon-"]:before, [class*=" qc-icon-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon-qc' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.qc-icon-pompy-ciepla:before {
+  content: "\e914";
+}
+.qc-icon-panele-fotowoltaiczne:before {
+  content: "\e915";
+}
+.qc-icon-kolektor-sloneczne:before {
+  content: "\e916";
+}
+.qc-icon-rower-elektryczny:before {
+  content: "\e911";
+}
+.qc-icon-rower:before {
+  content: "\e912";
+}
+.qc-icon-hulajnoga-elektryczna:before {
+  content: "\e913";
+}
+.qc-icon-moto_ac:before {
+  content: "\e90f";
+}
+.qc-icon-moto_oc:before {
+  content: "\e910";
+}
+.qc-icon-continents:before {
+  content: "\e90c";
+}
+.qc-icon-europe:before {
+  content: "\e90e";
+}
+.qc-icon-dom:before {
+  content: "\e90a";
+}
+.qc-icon-mieszkanie:before {
+  content: "\e90b";
+}
+.qc-icon-budynek-w-budowie-1:before {
+  content: "\e90d";
+}
+.qc-icon-stars3:before {
+  content: "\e907";
+}
+.qc-icon-stars2:before {
+  content: "\e908";
+}
+.qc-icon-stars:before {
+  content: "\e909";
+}
+.qc-icon-shield:before {
+  content: "\e900";
+}
+.qc-icon-phone:before {
+  content: "\e901";
+}
+.qc-icon-save:before {
+  content: "\e902";
+}
+.qc-icon-user:before {
+  content: "\e903";
+}
+.qc-icon-info-with-circle:before {
+  content: "\e904";
+}
+.qc-icon-home:before {
+  content: "\e905";
+}
+.qc-icon-clock:before {
+  content: "\e906";
+}
+.qc-icon-location:before {
+  content: "\e947";
+}
