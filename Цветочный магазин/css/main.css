@@ -382,6 +382,7 @@ body._touch .menu_arrow{
 		display: block;
 		padding-bottom: 40px;
 		font-size: 60px;
+		padding-left: 30px;
 	}
 	.bg_right{
 		top: 50%;
